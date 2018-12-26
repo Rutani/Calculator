@@ -1,0 +1,97 @@
+<html>
+<head>
+	<style>
+		.div{background-color: orange;border-style: solid;border-color: black;height: 500;width: 500;margin-left: 150;}
+		.f1{border-style: solid;background-color: white; margin-top: 50;margin-bottom: 50;margin-left: 50;margin-right: 50;height: 400; width:400px;}
+		.b1{height: 75px;width: 85px; border-style: solid;border-color: black;margin-left: 5px;margin-top: 5px; border-radius: 8px; font-size: 30px}
+		.inp{font-size: 30px;margin-left: 8px;margin-right: 8px;margin-top: 8px;border-style: solid;border-color: black;height: 50px;width: 380px}
+	</style>
+</head>
+<body>
+	<div class="div">
+<form  name="form1" class="f1">
+<table>
+	<tr>
+		<td colspan="4">
+			<input class="inp" type="text" name="tid"  id="t1" placeholder="  Enter Number...">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<Button class="b1" type="button" value="1" onclick="put(this)"">1</Button>
+		</td>
+		<td>
+			<Button class="b1" type="button" value="2"onclick="put(this)"">2</Button>
+		</td>
+		<td>
+			<Button class="b1"type="button" value="3" onclick="put(this)"">3</Button>
+		</td>
+		<td>
+			<Button class="b1" style="background-color: 0B4C5F;" type="button" value="+" onclick="put(this)"">+</Button>
+		</td>	
+	</tr>
+	<tr>
+		<td>
+   			  <Button class="b1" type="button" value="4" onclick="put(this)">4</Button>
+		</td>
+		<td>
+			<Button class="b1" type="button" value="5" onclick="put(this)">5</Button>
+		</td>
+		<td>
+			<Button class="b1"type="button" value="6" onclick="put(this)">6</Button>
+		</td>
+		<td>
+			<Button class="b1" style="background-color: 0B4C5F;"type="button" value="-" onclick="put(this)">-</Button>
+		</td>
+		<tr>
+		<td>
+			<Button class="b1" type="button"value="7" onclick="put(this)">7</Button>
+		</td>
+		<td>
+			<Button class="b1" type="button" value="8" onclick="put(this)">8</Button>
+		</td>
+		<td>
+			<Button class="b1"type="button" value="9" onclick="put(this)">9</Button>
+		</td>
+		<td>
+			<Button  style="background-color: 0B4C5F;"class="b1" type="button"  value="*" onclick="put(this)">*</Button>
+		</td>	
+	</tr>
+	<tr>
+		<td>
+			<Button style="background-color: orange;" class="b1" type="reset"  >C</Button>
+		</td>
+		<td>
+			<Button class="b1" type="button" value="0" onclick="put(this)">0</Button>
+		</td>
+		<td>
+			<Button  style="background-color: orange;" class="b1"type="button" onclick="f1()">=</Button>
+		</td>
+		<td>
+			<Button class="b1" style="background-color: 0B4C5F;" type="button" onclick="put(this)" value="/">/</Button>
+		</td>	
+	</tr>
+</table>
+</form>
+
+</div>
+<script>
+	function put(button)
+	{
+		var num=button.value;
+		document.form1.t1.value+=num;		
+	}
+	function f1()
+	{
+		var x=form1.tid.value;
+		form1.tid.value=eval(x);
+		//document.getElementById("t1")=eval(x);
+	}
+	function f2()
+	{
+		var x=form1.tid.value;
+
+	}
+</script>
+</body>
+</html>
